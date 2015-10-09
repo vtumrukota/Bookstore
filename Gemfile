@@ -39,10 +39,12 @@ group :development, :test do
   gem 'spring-commands-rspec'
   gem 'guard-rspec'
   gem 'rb-fsevent' if 'uname' =~ /Darwin/
+  gem 'fabrication', '2.11.3'
 end
 
 group :test do
   gem 'capybara', '2.4.1'
+  gem 'faker'
 end
 
 group :development do
@@ -51,4 +53,6 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'pry', '0.10.2'
+  gem 'pry-nav', '0.2.4'
 end
