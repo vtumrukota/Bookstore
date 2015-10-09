@@ -40,6 +40,7 @@ gem 'bootstrap_form', '~>2.1.1'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'spring'
   gem 'rspec-rails', '2.14.1'
   gem 'spring-commands-rspec'
   gem 'guard-rspec'
@@ -50,6 +51,7 @@ end
 group :test do
   gem 'capybara', '2.4.1'
   gem 'faker'
+  gem 'shoulda-matchers', require: false
 end
 
 group :development do
@@ -57,7 +59,6 @@ group :development do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
   gem 'pry', '0.10.2'
   gem 'pry-nav', '0.2.4'
 end
