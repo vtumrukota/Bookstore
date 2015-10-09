@@ -27,5 +27,13 @@ describe AuthorsController do
           expect(response).to render_template :show
         end
       end
+
+      describe "GET #new" do
+        it "assigns a new author object to the @author variable" do
+          get :new
+          expect(assigns(:author)).to be_instance_of(Author)
+        end
+      end
+
     end
 end
